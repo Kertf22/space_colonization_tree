@@ -1,10 +1,10 @@
 class Leaf {
-  position = {};
-
+  position;
+  reached = false;
   constructor() {
     this.position = {
-      x: random(),
-      y: random(),
+      x: Math.random() * 600,
+      y: Math.random() * 600 - 100,
     };
   }
 
